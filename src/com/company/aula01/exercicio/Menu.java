@@ -12,9 +12,10 @@ public class Menu {
         Subtracao subtracao = new Subtracao();
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("----CALCULADORA INICIALIZADA----");
-        int escolha = 0;
-        while(escolha !=5){
+        System.out.println("***** CALCULADORA INICIALIZADA *****");
+        int escolha;
+        do{
+            System.out.println("====================================");
             System.out.println("Escolha uma opção: \n 1-SOMA \n 2-SUBTRAÇÃO \n 3-MULTIPLICAÇÃO \n 4-DIVISÃO \n 5-SAIR");
             escolha = Integer.parseInt(scanner.nextLine());
 
@@ -35,9 +36,9 @@ public class Menu {
                     System.out.println("CALCULADORA ENCERRADA");
                     break;
                 default:
-                    System.out.println("Valor inválido. Tente novamente.");
+                    System.err.println("Valor inválido. Tente novamente.");
                     break;
             }
-        }
+        }while(escolha!=5);
     }
 }

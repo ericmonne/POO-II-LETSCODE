@@ -12,7 +12,7 @@ public class Divisao implements ICalculo{
             resultado = numero1 / numero2;
             return resultado;
         } else{
-            System.out.println("Erro: não é possível dividir por 0");
+            System.err.println("Erro: não é possível dividir por 0");
             return resultado;
         }
     }
