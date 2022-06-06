@@ -6,3 +6,6 @@ https://github.com/rflima11/exercicios-poo2-letscode/tree/main/01%20-%20Calculad
 
 Exercício aula 02:
 https://github.com/rflima11/exercicios-poo2-letscode/tree/main/02%20-%20Jogo%20de%20Cartas
+
+Exercício aula 06:
+https://github.com/rflima11/exercicios-poo2-letscode/tree/main/03%20-%20Sistema%20Livraria
