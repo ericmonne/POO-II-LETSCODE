@@ -15,6 +15,7 @@ public abstract class Produto implements IProduto {
         this.id = contadorId;
         return this.id;
     }
+
     public Produto() {
         gerarId();
     }
@@ -34,30 +35,37 @@ public abstract class Produto implements IProduto {
         gerarId();
     }
 
+    @Override
     public String getNome() {
         return nome;
     }
 
+    @Override
     public int getId() {
         return id;
     }
 
+    @Override
     public double getPreco() {
         return preco;
     }
 
+    @Override
     public void setNome(String nome) {
         this.nome = nome;
     }
 
+    @Override
     public void setPreco(double preco) {
         this.preco = preco;
     }
 
+    @Override
     public int getQuantidade() {
         return quantidade;
     }
 
+    @Override
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
@@ -81,6 +89,4 @@ public abstract class Produto implements IProduto {
                 ", quantidade= " + quantidade +
                 '}';
     }
-
-
 }

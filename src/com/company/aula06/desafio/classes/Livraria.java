@@ -65,10 +65,12 @@ public class Livraria implements ILivraria {
         }
     }
 
+    @Override
     public Caixa getCaixa() {
         return caixa;
     }
 
+    @Override
     public void setCaixa(Caixa caixa) {
         this.caixa = caixa;
     }
