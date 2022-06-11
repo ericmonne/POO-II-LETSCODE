@@ -8,8 +8,7 @@ public class Livraria implements ILivraria {
     private Estoque estoque;
     private final double DESCONTO_LIVROS = 0.15;
 
-    @Override
-    public boolean autorizaVenda(IProduto produto, ICliente cliente) {
+    private boolean autorizaVenda(IProduto produto, ICliente cliente) {
         if (produto.isRestrito()) {
             if (cliente.getIdade() >= 18) {
                 return true;
@@ -21,8 +20,7 @@ public class Livraria implements ILivraria {
         }
     }
 
-    @Override
-    public boolean verificaQuantidade(IProduto produto, int quantidadeVendida) {
+    private boolean verificaQuantidade(IProduto produto, int quantidadeVendida) {
         if (quantidadeVendida <= produto.getQuantidade()) {
             return true;
         } else {
@@ -30,8 +28,7 @@ public class Livraria implements ILivraria {
         }
     }
 
-    @Override
-    public double verificarParaDescontoLivros(double valorLivros) {
+    private double verificarParaDescontoLivros(double valorLivros) {
         if (valorLivros > 200) {
             double valorFinal = valorLivros - (valorLivros * DESCONTO_LIVROS);
             return valorFinal;
